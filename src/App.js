@@ -1,8 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-red-600 text-3xl"> Nasa Project !!</h1>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
