@@ -8,7 +8,7 @@ function SearchBox({ query, handleChange }) {
         e.preventDefault();
         handleChange("");
       }}
-      className="flex items-center flex-shrink-0 text-white mx-5 flex-1 bg-gray-200 rounded max-w-4xl"
+      className="flex items-center flex-shrink-0 text-white mx-5 flex-1 bg-gray-200 rounded max-w-4xl overflow-hidden"
     >
       <FaSearch className="text-black mx-5" />
 
@@ -21,7 +21,7 @@ function SearchBox({ query, handleChange }) {
         onChange={(e) => handleChange(e.target.value)}
       />
 
-      <button className="border-none bg-black h-12 px-5" type="button">
+      <button className="border-none bg-black h-12 px-5 " type="button">
         Search
       </button>
     </form>
