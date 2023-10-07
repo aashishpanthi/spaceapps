@@ -12,9 +12,6 @@ export default function InfoCard() {
     <div className="w-10/12 mx-auto flex justify-center">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
-          <Typography variant="h6" color="gray" className="mb-4 uppercase">
-            startups
-          </Typography>
           <Typography variant="h4" color="blue-gray" className="mb-2">
             Lyft launching cross-platform service this week
           </Typography>
