@@ -3,18 +3,21 @@
     "title": "This is a title",
     "description": "This is a long description",
     "tags": ["tag1", "tag2", "tag3"],
-    "link": "http://www.google.com"
+    "link": "http://www.google.com",
+    "category": "climate"
   },
   {
     "title": "This is a title 1",
     "description": "This is a description 1",
     "tags": ["tag1", "tag2", "tag3", "tag4"],
-    "link": "http://www.facebook.com"
+    "link": "http://www.facebook.com",
+    "category": "climate"
   },
   {
     "title": "This is a title 2",
     "description": "This is a description 2",
     "tags": ["tag1", "tag2"],
-    "link": "http://www.google.com"
+    "link": "http://www.google.com",
+    "category": "climate"
   }
 ]

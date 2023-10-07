@@ -1,7 +1,6 @@
 import React from "react";
 import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
-// import data from "../data/data.json";
 
 function Home({ data }) {
   return (

@@ -18,11 +18,13 @@ function App() {
       const title = item.title.toLowerCase();
       const description = item.description.toLowerCase();
       const tags = item.tags.join(" ").toLowerCase();
+      const category = item.category.toLowerCase();
 
       const allWordsInQueryContained =
         wordsInQuery.every((word) => title.includes(word)) ||
         wordsInQuery.every((word) => description.includes(word)) ||
-        wordsInQuery.every((word) => tags.includes(word));
+        wordsInQuery.every((word) => tags.includes(word)) ||
+        wordsInQuery.every((word) => category.includes(word));
 
       return allWordsInQueryContained;
     });
