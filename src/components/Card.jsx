@@ -2,7 +2,7 @@ import { Card, CardBody, Typography, Chip } from "@material-tailwind/react";
 
 export default function InfoCard({ title, description, tags, link }) {
   return (
-    <div className="w-10/12 mx-auto flex justify-center my-3">
+    <div className="w-10/12 mx-auto flex justify-center my-3 min-w-fit">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
           <a href={link} className="text-blue-500" target="_blank">
