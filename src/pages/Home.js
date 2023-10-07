@@ -1,7 +1,15 @@
 import React from "react";
+import TabsCustomAnimation from "../components/TabView";
+import InfoCard from "../components/Card";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <div>homepage content</div>
+      <TabsCustomAnimation />
+      <InfoCard />
+    </div>
+  );
 }
 
 export default Home;
