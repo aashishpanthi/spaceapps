@@ -5,7 +5,7 @@ import data from "../data/data.json";
 
 function Home() {
   return (
-    <div className="px-10">
+    <div className="px-10 grid grid-cols-[200px, 1fr]">
       <TabsCustomAnimation />
       {data.map((item, index) => {
         return (
