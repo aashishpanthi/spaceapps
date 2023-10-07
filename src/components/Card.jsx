@@ -18,8 +18,15 @@ export default function InfoCard({ title, description, tags, link }) {
           </Link>
           <div className="chips flex gap-1">
             {tags.map((tag) => {
-              return <Chip variant="ghost" value={tag} />;
+              return <Chip variant="outlined" value={tag} />;
             })}
+          </div>
+
+          <div className="flex gap-2 mt-2">
+            <Chip value="chip filled" />
+            <Chip variant="ghost" value="chip ghost" />
+            <Chip color="blue" value="blue" />
+            <Chip color="teal" value="teal" />
           </div>
         </CardBody>
       </Card>
