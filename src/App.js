@@ -1,8 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { useState } from "react";
 import data from "./data/data.json";
+import Data from "./pages/Data";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -35,9 +37,15 @@ function App() {
   return (
     <>
       <Navbar query={query} handleChange={handleChange} />
-      <Routes>
-        <Route path="/" element={<Home data={filteredData} />} />
-      </Routes>
+
+      <div className="min-h-[calc(100vh-4rem)] bg-gray-50 pt-2 pb-3">
+        <Routes>
+          <Route path="/" element={<Home data={filteredData} />} />
+          <Route path="/data/:id" element={<Data />} />
+        </Routes>
+      </div>
+
+      <Footer />
     </>
   );
 }
