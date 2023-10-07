@@ -1,7 +1,13 @@
 import React from "react";
+import TabsCustomAnimation from "../components/TabView";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <div>homepage content</div>
+      <TabsCustomAnimation />
+    </div>
+  );
 }
 
 export default Home;
