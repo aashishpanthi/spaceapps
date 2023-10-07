@@ -4,8 +4,7 @@ import InfoCard from "../components/Card";
 
 function Home() {
   return (
-    <div>
-      <div>homepage content</div>
+    <div className="px-10">
       <TabsCustomAnimation />
       <InfoCard />
     </div>
