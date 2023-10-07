@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import SearchBox from "./SearchBox";
 
-function Navbar() {
+function Navbar({ query, handleChange }) {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-white-500 p-6">
       {/* logo tailwind styling */}
@@ -11,7 +11,7 @@ function Navbar() {
       </div>
 
       {/* search input box */}
-      <SearchBox />
+      <SearchBox query={query} handleChange={handleChange} />
 
       {/* github icon */}
       <div className="flex items-center flex-shrink-0 text-white mr-6">
