@@ -15,7 +15,7 @@ function Home({ data }) {
                 title={item.title}
                 description={item.description}
                 tags={item.tags}
-                link={item.link}
+                link={`/data/${item.title.replace(/\s+/g, "-").toLowerCase()}`}
               />
             );
           })}
