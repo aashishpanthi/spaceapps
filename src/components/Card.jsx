@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography, Chip } from "@material-tailwind/react";
 import { Link } from "react-router-dom/dist";
-
+import { BsClockFill } from "react-icons/bs";
+import { FaDownload } from "react-icons/fa";
 export default function InfoCard({ title, description, tags, link }) {
   return (
     <div className="max-w-[700px]  mx-auto flex justify-center my-3">
@@ -23,10 +24,26 @@ export default function InfoCard({ title, description, tags, link }) {
           </div>
 
           <div className="flex gap-2 mt-2">
-            <Chip value="chip filled" />
-            <Chip variant="ghost" value="chip ghost" />
-            <Chip color="blue" value="blue" />
-            <Chip color="teal" value="teal" />
+            <Chip
+              value={
+                <div className="flex gap-1 items-center">
+                  <BsClockFill />
+                  8th October
+                </div>
+              }
+            />
+            <Chip
+              color="blue"
+              value={
+                <div className="flex gap-1 items-center">
+                  <FaDownload />
+                  200+
+                </div>
+              }
+            />
+
+            <Chip variant="ghost" value="Downloads" />
+            <Chip color="teal" value="blue" />
           </div>
         </CardBody>
       </Card>
