@@ -1,15 +1,8 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-  Chip,
-} from "@material-tailwind/react";
+import { Card, CardBody, Typography, Chip } from "@material-tailwind/react";
 
 export default function InfoCard() {
   return (
-    <div className="w-10/12 mx-auto flex justify-center">
+    <div className="w-1/2 mx-auto flex justify-center ">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
           <Typography variant="h4" color="blue-gray" className="mb-2">
