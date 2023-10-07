@@ -3,7 +3,7 @@ import { Link } from "react-router-dom/dist";
 
 export default function InfoCard({ title, description, tags, link }) {
   return (
-    <div className="w-10/12 mx-auto flex justify-center my-3 min-w-fit">
+    <div className="max-w-[700px]  mx-auto flex justify-center my-3">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
           <Link to={link} className="text-blue-500 inline-block my-0">
