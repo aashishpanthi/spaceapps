@@ -1,9 +1,9 @@
 import React from "react";
 import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
-import data from "../data/data.json";
+// import data from "../data/data.json";
 
-function Home() {
+function Home({ data }) {
   return (
     <div className="px-10 grid grid-cols-[200px, 1fr]">
       <TabsCustomAnimation />
