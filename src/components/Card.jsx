@@ -11,9 +11,11 @@ export default function InfoCard({ title, description, tags, link }) {
               {title}
             </Typography>
           </Link>
-          <Typography color="gray" className="mb-8 font-normal d">
-            {description}
-          </Typography>
+          <Link to={link} className="text-blue-500 inline-block my-0">
+            <Typography color="gray" className="mb-8 font-normal d">
+              {description}
+            </Typography>
+          </Link>
           <div className="chips flex gap-1">
             {tags.map((tag) => {
               return <Chip variant="outlined" value={tag} />;
