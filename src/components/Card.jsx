@@ -1,31 +1,22 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-  Chip,
-} from "@material-tailwind/react";
+import { Card, CardBody, Typography, Chip } from "@material-tailwind/react";
 
-export default function InfoCard() {
+export default function InfoCard({ title, description, tags, link }) {
   return (
-    <div className="w-10/12 mx-auto flex justify-center">
+    <div className="w-10/12 mx-auto flex justify-center my-3">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Lyft launching cross-platform service this week
-          </Typography>
+          <a href={link} className="text-blue-500" target="_blank">
+            <Typography variant="h4" color="blue-gray" className="mb-2">
+              {title}
+            </Typography>
+          </a>
           <Typography color="gray" className="mb-8 font-normal">
-            Like so many organizations these days, Autodesk is a company in
-            transition. It was until recently a traditional boxed software
-            company selling licenses. Yet its own business model disruption is
-            only part of the story
+            {description}
           </Typography>
           <div className="chips flex gap-1">
-            <Chip variant="ghost" value="#Tag1" />
-            <Chip variant="ghost" value="#Tag2" />
-            <Chip variant="ghost" value="#Tag3" />
-            <Chip variant="ghost" value="#Tag4" />
+            {tags.map((tag) => {
+              return <Chip variant="ghost" value={tag} />;
+            })}
           </div>
         </CardBody>
       </Card>
