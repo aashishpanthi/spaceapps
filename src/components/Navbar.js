@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="flex items-center justify-between flex-wrap bg-white-500 p-6">
       {/* logo tailwind styling */}
       <div className="flex items-center flex-shrink-0 text-black mr-6 font-bold">
-        Logo
+        Data WareHouse
       </div>
 
       {/* search input box */}
