@@ -39,17 +39,21 @@ export default function TabsCustomAnimation() {
   ];
 
   return (
-    <Tabs value="html" orientation="vertical">
-      <TabsHeader className="w-32">
+    <Tabs
+      value="html"
+      orientation="vertical"
+      className="w-fit absolute z-50 scale-110 top-1/2 -translate-y-1/2 "
+    >
+      <TabsHeader className="w-52">
         {data.map(({ label, value }) => (
           <Tab key={value} value={value}>
             {label}
           </Tab>
         ))}
       </TabsHeader>
-      <TabsBody className="flex flex-col">
+      <TabsBody className="flex flex-col gap-0">
         {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value} className="py-0">
+          <TabPanel key={value} value={value} className="py-0 ">
             {desc}
           </TabPanel>
         ))}

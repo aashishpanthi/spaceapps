@@ -7,18 +7,20 @@ function Home() {
   return (
     <div className="px-10 flex ">
       <TabsCustomAnimation />
-      <div className="flex-1">
-        {data.map((item, index) => {
-          return (
-            <InfoCard
-              key={index}
-              title={item.title}
-              description={item.description}
-              tags={item.tags}
-              link={item.link}
-            />
-          );
-        })}
+      <div className="flex-1 flex justify-center">
+        <div className="w-[900px]">
+          {data.map((item, index) => {
+            return (
+              <InfoCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                tags={item.tags}
+                link={item.link}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

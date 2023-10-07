@@ -5,7 +5,11 @@ export default function InfoCard({ title, description, tags, link }) {
     <div className="w-10/12 mx-auto flex justify-center my-3 min-w-fit">
       <Card className="w-full  flex-row h-fit grid items-center">
         <CardBody>
-          <a href={link} className="text-blue-500" target="_blank">
+          <a
+            href={link}
+            className="text-blue-500 inline-block my-0"
+            target="_blank"
+          >
             <Typography variant="h4" color="blue-gray" className="mb-2">
               {title}
             </Typography>
