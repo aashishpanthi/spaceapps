@@ -1,14 +1,17 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import SearchBox from "./SearchBox";
+import { Link } from "react-router-dom/dist";
 
 function Navbar({ query, handleChange }) {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white-500 p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-white-500 px-6 py-3">
       {/* logo tailwind styling */}
-      <div className="flex items-center flex-shrink-0 text-black mr-6 font-bold">
-        Data WareHouse
-      </div>
+      <Link to="/">
+        <div className="flex items-center flex-shrink-0 text-black mr-6 font-bold text-xl tracking-tight">
+          Data WareHouse
+        </div>
+      </Link>
 
       {/* search input box */}
       <SearchBox query={query} handleChange={handleChange} />
@@ -20,10 +23,7 @@ function Navbar({ query, handleChange }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub
-            className="text-gray-700 mx-5"
-            style={{ fontSize: "2rem" }}
-          />
+          <FaGithub className="text-black mx-5" style={{ fontSize: "2rem" }} />
         </a>
       </div>
     </nav>
