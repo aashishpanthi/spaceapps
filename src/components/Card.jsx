@@ -42,8 +42,7 @@ export default function InfoCard({ title, description, tags, link }) {
               }
             />
 
-            <Chip variant="ghost" value="Downloads" />
-            <Chip color="teal" value="blue" />
+            <Chip variant="ghost" value="More Info >" />
           </div>
         </CardBody>
       </Card>
