@@ -38,7 +38,7 @@ function LineChart() {
     ],
   });
   return (
-    <main className="flex flex-col items-center w-screen h-96 justify-center">
+    <main className="flex flex-col items-start w-screen h-96 justify-center">
       {/* <div className="h-96 w-1 mx-auto"> */}
       <Line data={Data} />
       {/* </div> */}

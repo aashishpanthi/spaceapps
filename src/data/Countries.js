@@ -8603,3 +8603,9 @@ export const countryData = [
     },
   },
 ];
+export function getOneCountryData(name) {
+  let data = countryData.find(
+    (country) => country.Country_Name.toLowerCase() === name.toLowerCase()
+  );
+  return data;
+}

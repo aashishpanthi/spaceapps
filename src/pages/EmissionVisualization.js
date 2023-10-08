@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CountriesSelect from "../components/CountriesSelect";
+import ChartByCountry from "../components/Visualizations/ChartByCountry";
 
 function EmissionPage() {
   const [country, setCountry] = useState("Nepal");
@@ -11,12 +12,13 @@ function EmissionPage() {
         1960 to 2022
       </h1>
 
-      <div className="mt-4 ">
+      <div className="mt-4 flex flex-col items-start">
         {/* <span className="inline-block bg-black px-3 py-1 text-sm font-semibold text-white mr-2">
           USA
         </span> */}
 
         <CountriesSelect country={country} setCountry={setCountry} />
+        <ChartByCountry country={country} />
       </div>
     </div>
   );
