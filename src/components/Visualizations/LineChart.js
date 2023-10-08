@@ -56,8 +56,8 @@ function LineChart() {
       <p className="text-center mt-2 mb-24">
         This line chart shows the actual and predicted carbon dioxide emission
         of Nepal from 1960 to 2022. The actual data is taken from World Bank
-        Open Data and the predicted data is calculated using the Linear
-        Regression algorithm.
+        Open Data and the predicted data is calculated using the time series
+        analysis.
       </p>
     </main>
   );
