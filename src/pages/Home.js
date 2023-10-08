@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
 import Model from "../components/Model";
+import EmissionCard from "../components/EmissionCard";
 import Skeleton from "../components/Skeleton";
 import { Typography } from "@material-tailwind/react";
 
@@ -14,7 +15,7 @@ function Home({ data, Category, handleCategoryChange }) {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className="px-10 flex max-w-6xl mx-auto">
+    <div className="px-10 flex max-w-7xl mx-auto">
       <TabsCustomAnimation
         Category={Category}
         handleCategoryChange={handleCategoryChange}
@@ -24,7 +25,7 @@ function Home({ data, Category, handleCategoryChange }) {
 
       <Model open={open} setOpen={setOpen} />
       <div className="flex-1 flex justify-center">
-        <div className="mt-12">
+        <div className="mt-12 mx-2">
           {data.length === 0 ? (
             <>
               <Skeleton />
@@ -51,6 +52,12 @@ function Home({ data, Category, handleCategoryChange }) {
             </div>
           )}
         </div>
+      </div>
+
+      <div className="mt-16">
+        {/* link to the carbon dioxide emission analysis page with a card */}
+
+        <EmissionCard />
       </div>
     </div>
   );

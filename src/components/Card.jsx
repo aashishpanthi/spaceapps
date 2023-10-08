@@ -21,7 +21,14 @@ export default function InfoCard({ title, description, tags, link }) {
           </Link>
           <div className="chips flex gap-1">
             {tags.map((tag) => {
-              return <Chip key={tag} variant="ghost" value={tag} />;
+              return (
+                <Chip
+                  key={tag}
+                  color={Math.random() > 0.5 ? "lightBlue" : "indigo"}
+                  variant={Math.random() > 0.5 ? "ghost" : "outlined"}
+                  value={tag}
+                />
+              );
             })}
           </div>
 
