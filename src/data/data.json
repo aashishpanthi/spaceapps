@@ -10556,6 +10556,44 @@
     "link": "https://coast.noaa.gov/digitalcoast/topics/water-quality.html",
     "category": "ocean",
     "tags": ["api"]
+  },
+  {
+    "title": "Effects of Space on the Human Body (CSA)",
+    "description":"This page provides an overview of the effects of space on the human body. This might be helpful for better understanding the challenges that your C. elegans digital twin may face.",
+    "link": "https://www.asc-csa.gc.ca/eng/astronauts/space-medicine/concerns.asp",
+    "category": "human",
+    "tags": ["api"]
+  },
+  
+  {
+    "title": "Psyche Mission Information",
+    "description":"This site includes images and information on the Psyche mission and its instruments, the Psyche asteroid, the science, and more.",
+    "link": "https://psyche.asu.edu/",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "NASA JPL Activities for Students",
+    "description":"NASA’s Jet Propulsion Laboratory has lots of resources pertaining to activities that are appropriate for many ages and may give you some “high-tech, low-tech, and no-tech” ideas",
+    "link": "https://psyche.asu.edu/ ",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  
+  {
+    "title": "Psyche Mission Information",
+    "description":"This site includes images and information on the Psyche mission and its instruments, the Psyche asteroid, the science, and more.",
+    "link": "https://psyche.asu.edu/ ",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "NASA Space Place",
+    "description":"NASA’s Space Place is a great resource for inspiration as you consider what people of all ages might like to learn, make, and do",
+    "link": "https://spaceplace.nasa.gov/menu/do/",
+    "category": "exploration",
+    "tags": ["api"]
   }
+  
   
 ]
