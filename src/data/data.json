@@ -10607,6 +10607,13 @@
     "link": "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1",
     "category": "exploration",
     "tags": ["api"]
+  },
+  {
+    "title": "Airborne Visible InfraRed Imaging Spectrometer (AVIRIS)",
+    "description":"The AVIRIS hyperspectral instruments are used in airborne campaigns for a wide range of studies that include the fields of environmental science, snow hydrology, geology, volcanology, oceanography, and soil and land management.",
+    "link": "https://daac.ornl.gov/cgi-bin/dataset_lister.pl?p=47",
+    "category": "speceng",
+    "tags": ["api"]
   }
   
   
