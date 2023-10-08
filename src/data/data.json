@@ -3590,6 +3590,76 @@
     "category": "health",
     "tags": ["api"]
   },
+  {
+    "title": "Center for Disease Control (CDC) ",
+    "description": "CDC data repository.",
+    "link": "https://data.cdc.gov/",
+    "category": "disease",
+    "tags": ["api"]
+  },
+  {
+    "title": "US Department of Agriculture (USDA) ",
+    "description": "USDA data repository",
+    "link": "https://www.usda.gov/content/usda-open-data-catalog",
+    "category": "agriculture",
+    "tags": ["api"]
+  },
+  {
+    "title": "USGS EarthExplorer ",
+    "description": "Online search, browse display, metadata export, and data download of satellite, aircraft, and other remote sensing inventories",
+    "link": "https://earthexplorer.usgs.gov/",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "National Institute of Health (NIH) ",
+    "description": "NIH data portal",
+    "link": "https://hdpulse.nimhd.nih.gov/data-portal/home",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "GeoPlatform ",
+    "description": "A cross-agency collaborative effort that provides data services, applications and tools, and shared services. ",
+    "link": "https://www.geoplatform.gov/",
+    "category": "environment",
+    "tags": ["api"]
+  },
+  {
+    "title": "Surface Water and Ocean Topography (SWOT)",
+    "description": "This page provides information about the Surface Water and Ocean Topography (SWOT) mission. This mission, led by NASA and Frances' space agency (CNES) with contributions from the CSA and the UK Space Agency, provides new and detailed information on one of the most important resources we share – water. This information should help participants better understand how satellites can be used to observe surface water on Earth. ",
+    "link": "https://www.asc-csa.gc.ca/eng/satellites/swot/",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "EO Dashboard water stories and datasets",
+    "description": "The Earth Observing Dashboard is a joint NASA, ESA, JAXA initiative to provide environmental and economic indicators based on Earth Observation data of the three agencies, and communicate scientific findings through storytelling.",
+    "link": "https://eodashboard.org/oceans",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Environment and Climate Change Canada (ECCC) Open Data Portal",
+    "description": "Environment and Climate Change Canada has various datasets on water quality (including the release of harmful substances in bodies of water), as well as air quality and biodiversity. This platform can be used for ecological conversation studies.",
+    "link": "https://open.canada.ca/data/en/organization/ec",
+    "category": "environment",
+    "tags": ["api"]
+  },
+  {
+    "title": "Climate Change Services and Information",
+    "description": "This is the Government of Canada's hub for climate change information.",
+    "link": "https://www.canada.ca/en/services/environment/weather/climatechange.html",
+    "category": "climate",
+    "tags": ["api"]
+  },
+  {
+    "title":" Water ",
+    "description": "This is the Government of Canada's hub for climate change information.",
+    "link": "https://www.canada.ca/en/services/environment/weather/climatechange.html",
+    "category": "climate",
+    "tags": ["api"]
+  },
 
   {
     "title": "Whole Genome Sequencing data",
@@ -3711,4 +3781,6 @@
     "category": "speceng",
     "tags": ["api", "json"]
   }
+  
+
 ]
