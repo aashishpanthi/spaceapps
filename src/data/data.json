@@ -15843,5 +15843,20 @@
     "link": "https://daac.ornl.gov/cgi-bin/dataset_lister.pl?p=47",
     "category": "speceng",
     "tags": ["api"]
+  },
+  {
+    "title": "Landslides in Türkiye",
+    "description":"NASA’s Earth Applied Sciences Disasters program area is tracking developments related to the earthquakes and their aftermath and sharing maps, data, and scientific expertise with multiple stakeholders to aid ongoing response efforts and risk assessments.",
+    "link": "https://earthobservatory.nasa.gov/images/151016/landslides-in-turkiye",
+    "category": "environment",
+    "tags": ["api"]
+  },
+  
+  {
+    "title": "Basic facts about the Sun",
+    "description":"The Sun's gravity holds the solar system together, keeping everything – from the biggest planets to the smallest particles of debris – in its orbit. The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate, radiation belts and auroras. Though it is special to us, there are billions of stars like our Sun scattered across the Milky Way galaxy.",
+    "link": "https://science.nasa.gov/sun/",
+    "category": "solar",
+    "tags": ["api"]
   }
 ]
