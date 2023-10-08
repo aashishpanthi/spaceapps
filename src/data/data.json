@@ -3590,6 +3590,76 @@
     "category": "health",
     "tags": ["api"]
   },
+  {
+    "title": "Center for Disease Control (CDC) ",
+    "description": "CDC data repository.",
+    "link": "https://data.cdc.gov/",
+    "category": "disease",
+    "tags": ["api"]
+  },
+  {
+    "title": "US Department of Agriculture (USDA) ",
+    "description": "USDA data repository",
+    "link": "https://www.usda.gov/content/usda-open-data-catalog",
+    "category": "agriculture",
+    "tags": ["api"]
+  },
+  {
+    "title": "USGS EarthExplorer ",
+    "description": "Online search, browse display, metadata export, and data download of satellite, aircraft, and other remote sensing inventories",
+    "link": "https://earthexplorer.usgs.gov/",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "National Institute of Health (NIH) ",
+    "description": "NIH data portal",
+    "link": "https://hdpulse.nimhd.nih.gov/data-portal/home",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "GeoPlatform ",
+    "description": "A cross-agency collaborative effort that provides data services, applications and tools, and shared services. ",
+    "link": "https://www.geoplatform.gov/",
+    "category": "environment",
+    "tags": ["api"]
+  },
+  {
+    "title": "Surface Water and Ocean Topography (SWOT)",
+    "description": "This page provides information about the Surface Water and Ocean Topography (SWOT) mission. This mission, led by NASA and Frances' space agency (CNES) with contributions from the CSA and the UK Space Agency, provides new and detailed information on one of the most important resources we share – water. This information should help participants better understand how satellites can be used to observe surface water on Earth. ",
+    "link": "https://www.asc-csa.gc.ca/eng/satellites/swot/",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "EO Dashboard water stories and datasets",
+    "description": "The Earth Observing Dashboard is a joint NASA, ESA, JAXA initiative to provide environmental and economic indicators based on Earth Observation data of the three agencies, and communicate scientific findings through storytelling.",
+    "link": "https://eodashboard.org/oceans",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Environment and Climate Change Canada (ECCC) Open Data Portal",
+    "description": "Environment and Climate Change Canada has various datasets on water quality (including the release of harmful substances in bodies of water), as well as air quality and biodiversity. This platform can be used for ecological conversation studies.",
+    "link": "https://open.canada.ca/data/en/organization/ec",
+    "category": "environment",
+    "tags": ["api"]
+  },
+  {
+    "title": "Climate Change Services and Information",
+    "description": "This is the Government of Canada's hub for climate change information.",
+    "link": "https://www.canada.ca/en/services/environment/weather/climatechange.html",
+    "category": "climate",
+    "tags": ["api"]
+  },
+  {
+    "title":" Water ",
+    "description": "This is the Government of Canada's hub for climate change information.",
+    "link": "https://www.canada.ca/en/services/environment/weather/climatechange.html",
+    "category": "climate",
+    "tags": ["api"]
+  },
 
   {
     "title": "Whole Genome Sequencing data",
@@ -3668,5 +3738,49 @@
     "category": "solar",
     "tags": ["api", "json"]
   },
+
+  {
+    "title": "CASSIOPE",
+    "description": "The Canadian CASSIOPE satellite, operated by the University of Calgary, carries the Enhanced Polar Outflow Probe (e-POP) suite of scientific instruments to study the ionosphere, where space meets the upper atmosphere. The instruments collect data about the effects of solar storms and, more specifically, their harmful impact on radio communications, satellite navigation and other space and ground-based technologies.This dataset could help you validate the DSCVR data. ",
+    "link": "https://donnees-data.asc-csa.gc.ca/dataset/98466021-2q1w-5g2d-677zwru214wx68",
+    "category": "hydrosphere",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "CASSIOPE",
+    "description": "Real-Time Solar Wind (RTSW) data refers to data from any spacecraft located upwind of Earth, typically orbiting the L1 Lagrange point, that is being tracked by the Real-Time Solar Wind Network of tracking stations.  The NOAA/DSCOVR satellite became the operational RTSW spacecraft on July 27, 2016 at 1600UT (noon EDT, 10am MDT). SWPC maintains the ability to instantaneously switch the spacecraft that provides the RTSW data.  During times of outages in DSCOVR data or problems with the data, this page may instead display the data from the NASA/ACE spacecraft. ",
+    "link": "https://www.swpc.noaa.gov/products/real-time-solar-wind",
+    "category": "solar",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "GEOSPACE MAGNETOSPHERE MOVIES",
+    "description": "The Geospace Magnetosphere Movies display 2d cut planes of Earth's magnetosphere from the Geospace model output for three different plasma parameters (velocity, density, and pressure). For each plasma parameter, equatorial (x-y plane) and noon-midnight magnetic meridian (x-z plane) cut planes are plotted in GSM coordinates. The animations show the model forecast, where the lead time depends on the solar wind speed, as well as the previous two hours for context. ",
+    "link": "https://www.swpc.noaa.gov/products/geospace-magnetosphere-movies",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "NASA Data Pathfinders",
+    "description": "The Data Pathfinders are great tools to learn about NASA data related to certain topics such as disasters, sea level rise, or even diseases. Each pathfinder explains how satellite data can be used, then shows you where to find the data and how to use it. ",
+    "link": "https://www.earthdata.nasa.gov/learn/pathfinders",
+    "category": "speceng",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "NASA Data Pathfinders",
+    "description": "The Data Pathfinders are great tools to learn about NASA data related to certain topics such as disasters, sea level rise, or even diseases. Each pathfinder explains how satellite data can be used, then shows you where to find the data and how to use it. ",
+    "link": "https://www.earthdata.nasa.gov/learn/pathfinders",
+    "category": "speceng",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Global Learning and Observations to Benefit the Environment (GLOBE) Program",
+    "description": "GLOBE is an international community of citizen scientists who gather information about Earth and share it openly to enhance Earth system science everywhere. These data may be helpful to learn more about your community.",
+    "link": "https://observer.globe.gov/",
+    "category": "speceng",
+    "tags": ["api", "json"]
+  }
+  
 
 ]
