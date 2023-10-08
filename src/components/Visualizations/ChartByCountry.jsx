@@ -4,7 +4,9 @@ import { Chart as ChartJS } from "chart.js/auto";
 import { useState } from "react";
 import { getOneCountryData } from "../../data/Countries";
 
-const ChartByCountry = ({ country = "India" }) => {
+const ChartByCountry = ({
+  country = JSON.parse(localStorage.getItem("country")).name,
+}) => {
   // useEffect(() => {
 
   let yearArr = [];
