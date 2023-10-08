@@ -10,7 +10,7 @@ function EmissionPage() {
 
       <div className="mt-4 ">
         <span className="inline-block bg-black px-3 py-1 text-sm font-semibold text-white mr-2">
-          Hi
+          ...
         </span>
       </div>
 

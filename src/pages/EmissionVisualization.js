@@ -1,8 +1,9 @@
-import { Typography } from "@material-tailwind/react";
-import React from "react";
+import { useState } from "react";
 import CountriesSelect from "../components/CountriesSelect";
 
 function EmissionPage() {
+  const [country, setCountry] = useState("USA");
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 mt-5">
       <h1 className="text-3xl font-bold text-gray-900">
@@ -15,7 +16,7 @@ function EmissionPage() {
           USA
         </span> */}
 
-        <CountriesSelect />
+        <CountriesSelect country={country} setCountry={setCountry} />
       </div>
     </div>
   );
