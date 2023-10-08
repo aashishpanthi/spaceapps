@@ -1,0 +1,7 @@
+{
+  "name": "scraper",
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^21.3.8"
+  }
+}
