@@ -28,6 +28,13 @@
     "tags": ["api"]
   },
   {
+    "title": "Develop the Oracle of DSCOVR - Experimental Data Repository",
+    "description": "The data files in this repository contain measurements from the DSCOVR PlasMAG instrument suite, recorded in the solar wind near the Earth-Sun L1 Lagrange Point between 2016 and present day. Each file corresponds to one year of measurements. The measurements themselves have been condensed and decimated to a cadence of one measurement set per minute.",
+    "link": "https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/",
+    "category": "solar",
+    "tags": ["CSV"]
+  },
+  {
     "title": "Alzheimer's Disease and Healthy Aging Data",
     "description": "2015-2021. This data set contains data from BRFSS.",
     "link": "https://data.cdc.gov/Healthy-Aging/Alzheimer-s-Disease-and-Healthy-Aging-Data/hfr9-rurv",
@@ -46,6 +53,13 @@
     "description": "2011.  Centers for Disease Control and Prevention (CDC).  PRAMS, the Pregnancy Risk Assessment Monitoring System, is a surveillance system collecting state-specific, population-based data on maternal attitudes and experiences before, during, and shortly after pregnancy. It is a collaborative project of the Centers for Disease Control and Prevention (CDC) and state health departments.  PRAMS provides data for state health officials to use to improve the health of mothers and infants. PRAMS topics include abuse, alcohol use, contraception, breastfeeding, mental health, morbidity, obesity, preconception health, pregnancy history, prenatal-care, sleep behavior, smoke exposure, stress, tobacco use, WIC, Medicaid, infant health, and unintended pregnancy.\nData will be updated annually as it becomes available.",
     "link": "https://data.cdc.gov/Maternal-Child-Health/Graph-of-Tobacco-Use-3-Months-Before-and-Last-3-Mo/mbvg-apdj",
     "category": "diesease",
+    "tags": ["api"]
+  },
+  {
+    "title": "Records of various geomagnetic activity indices",
+    "description": "Working demonstration for reading the DSCOVR experimental data.",
+    "link": "https://hpde.io/NASA/NumericalData/OMNI/PT1H",
+    "category": "solar",
     "tags": ["api"]
   },
   {
