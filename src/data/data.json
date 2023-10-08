@@ -10521,6 +10521,41 @@
     "link": "https://www.dfo-mpo.gc.ca/oceans/conservation/plan/MCT-OCM-eng.html",
     "category": "ocean",
     "tags": ["api"]
+  },
+  {
+    "title": "NASA Chlorophyll-a data from the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument onboard the Aqua satellite in 2023:",
+    "description": "Different file formats for chlorophyll-a data over different areas of the ocean.",
+    "link": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/Aqua-MODIS/2023/",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Watching marine wildlife",
+    "description": "This website from Canada's Department of Fisheries and Oceans give you some tips for how to observe marine animals responsibly.",
+    "link": "https://www.dfo-mpo.gc.ca/species-especes/mammals-mammiferes/watching-observation/index-eng.html",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Fisheries and Oceans Canada (DFO) - Critical Habitat of Species at Risk",
+    "description": "The Species at Risk (SAR) Program is responsible for carrying out DFO’s mandate under the Species at Risk Act (SARA) to protect, recover and conserve all listed aquatic SAR in Canada. Critical habitat is identified for species listed as Endangered or Threatened under the Species at Risk Act (SARA). This could help you better understand which species are at risk in your area.",
+    "link": "https://open.canada.ca/data/dataset/db177a8c-5d7d-49eb-8290-31e6a45d786c",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Surface Water and Ocean Topography (SWOT)",
+    "description": "This page provides information about the Surface Water and Ocean Topography (SWOT) mission. This mission, led by NASA and Frances' space agency (CNES) with contributions from the CSA and the UK Space Agency, provides new and detailed information on one of the most important resources we share – water. This information should help participants better understand the importance of surface water.",
+    "link": "https://www.asc-csa.gc.ca/eng/satellites/swot/",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "NOAA’s water quality portal",
+    "description": "Landing site that links to other water quality resources, including water quality parameters and the national water quality portal.",
+    "link": "https://coast.noaa.gov/digitalcoast/topics/water-quality.html",
+    "category": "ocean",
+    "tags": ["api"]
   }
   
 ]
