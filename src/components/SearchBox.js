@@ -1,12 +1,14 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function SearchBox({ query, handleChange }) {
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleChange("");
+
+        handleChange(query);
       }}
       className="flex items-center flex-shrink-0 text-white mx-5 flex-1 bg-gray-200 rounded max-w-4xl overflow-hidden"
     >
@@ -21,9 +23,11 @@ function SearchBox({ query, handleChange }) {
         onChange={(e) => handleChange(e.target.value)}
       />
 
-      <button className="border-none bg-black h-12 px-5 " type="button">
-        Search
-      </button>
+      <Link to="/" className="decoration-none">
+        <button className="border-none bg-black h-12 px-5 " type="button">
+          Search
+        </button>
+      </Link>
     </form>
   );
 }
