@@ -8,7 +8,7 @@ function Data({}) {
   const params = useParams();
   const id = params.id;
 
-  const idWithoutDash = id.replaceAll("-", " ");
+  const idWithoutDash = id; //.replaceAll("-", " ");
 
   const item = data.find((item) => item.title.toLowerCase() === idWithoutDash);
 

@@ -1,10 +1,38 @@
 [
   {
+    "title": "CARISMA Magnetometer Network",
+    "description": "The CARISMA (www.carisma.ca), previously known as CANOPUS, magnetometer network is operated by the University of Alberta. Users of the data are asked to follow the rules of the road at www.carisma.ca/CARISMADataUse. Any use or distribution of the data please include an appropriate acknowledgement, such as: The authors thank I.R. Mann, D.K. Milling and the rest of the CARISMA team for data. CARISMA is operated by the University of Alberta, funded by the Canadian Space Agency. The following CARISMA reference paper should also be cited: Mann, I. R., et al. (2008), The upgraded CARISMA magnetometer array in the THEMIS era, Space Sci. Rev., 141, 413-451, doi:10.1007/s11214-008-9457-6.",
+    "link": "https://donnees-data.asc-csa.gc.ca/dataset/06f5e364-6e2c-4d1c-95c2-9fb7d871ca20",
+    "category": "solar",
+    "tags": ["CSV", "TXT", "Other"]
+  },
+  {
+    "title": "CASSIOPE Satellite Data on Earth’s Space Environment",
+    "description": "The Canadian CASSIOPE satellite, operated by the University of Calgary, carries the Enhanced Polar Outflow Probe (e-POP) suite of scientific instruments to study the ionosphere, where space meets the upper atmosphere. The instruments collect data about the effects of solar storms and, more specifically, their harmful impact on radio communications, satellite navigation and other space and ground-based technologies. The eight science instruments include imaging plasma and neutral particle sensors, magnetometers, radio wave receivers, dual-frequency GPS receivers, CCD cameras, and a beacon transmitter. The imaging plasma sensors (SEI and IRM) measure particle distributions and the magnetometers (MGF) measure field aligned currents on the time scale of 10-ms and spatial scale of ~100 m. The neutral mass and velocity spectrometer (NMS) measures the density and velocity of major atmospheric species. The CCD cameras (FAI) perform auroral imaging on the time scale of one second. The radio wave and GPS receivers (RRI and GAP) perform near real-time imaging studies of the ionosphere, in conjunction with ground-based radars, as does the beacon transmitter (CER), in conjunction with ground receiving stations. Data from these scientific instruments are available on the University of Calgary website: https://epop.phys.ucalgary.ca/data/). You cans also download here an extract of the telemetry data that lists a variety of CASSIOPE positions, velocities and altitudes based on UTC time.",
+    "link": "https://donnees-data.asc-csa.gc.ca/dataset/98466021-2q1w-5g2d-677zwru214wx68",
+    "category": "solar",
+    "tags": ["CSV", "TXT"]
+  },
+  {
     "title": "Nutrition, Physical Activity, and Obesity - Behavioral Risk Factor Surveillance System",
     "description": "This dataset includes data on adult's diet, physical activity, and weight status from Behavioral Risk Factor Surveillance System. This data is used for DNPAO's Data, Trends, and Maps database, which provides national and state specific data on obesity, nutrition, physical activity, and breastfeeding.",
     "link": "https://data.cdc.gov/Nutrition-Physical-Activity-and-Obesity/Nutrition-Physical-Activity-and-Obesity-Behavioral/hn4x-zwk7",
     "category": "diesease",
     "tags": ["api"]
+  },
+  {
+    "title": "Solar radio flux - solar monitoring program",
+    "description": "Data from the Canadian solar flux archive could help you validate the data and your results from the DSCVR mission.",
+    "link": "https://www.spaceweather.gc.ca/forecast-prevision/solar-solaire/solarflux/sx-en.php",
+    "category": "solar",
+    "tags": ["api"]
+  },
+  {
+    "title": "Develop the Oracle of DSCOVR - Experimental Data Repository",
+    "description": "The data files in this repository contain measurements from the DSCOVR PlasMAG instrument suite, recorded in the solar wind near the Earth-Sun L1 Lagrange Point between 2016 and present day. Each file corresponds to one year of measurements. The measurements themselves have been condensed and decimated to a cadence of one measurement set per minute.",
+    "link": "https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/",
+    "category": "solar",
+    "tags": ["CSV"]
   },
   {
     "title": "Alzheimer's Disease and Healthy Aging Data",
@@ -25,6 +53,13 @@
     "description": "2011.  Centers for Disease Control and Prevention (CDC).  PRAMS, the Pregnancy Risk Assessment Monitoring System, is a surveillance system collecting state-specific, population-based data on maternal attitudes and experiences before, during, and shortly after pregnancy. It is a collaborative project of the Centers for Disease Control and Prevention (CDC) and state health departments.  PRAMS provides data for state health officials to use to improve the health of mothers and infants. PRAMS topics include abuse, alcohol use, contraception, breastfeeding, mental health, morbidity, obesity, preconception health, pregnancy history, prenatal-care, sleep behavior, smoke exposure, stress, tobacco use, WIC, Medicaid, infant health, and unintended pregnancy.\nData will be updated annually as it becomes available.",
     "link": "https://data.cdc.gov/Maternal-Child-Health/Graph-of-Tobacco-Use-3-Months-Before-and-Last-3-Mo/mbvg-apdj",
     "category": "diesease",
+    "tags": ["api"]
+  },
+  {
+    "title": "Records of various geomagnetic activity indices",
+    "description": "Working demonstration for reading the DSCOVR experimental data.",
+    "link": "https://hpde.io/NASA/NumericalData/OMNI/PT1H",
+    "category": "solar",
     "tags": ["api"]
   },
   {

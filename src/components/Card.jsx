@@ -25,7 +25,7 @@ export default function InfoCard({ title, description, tags, link }) {
             })}
           </div>
 
-          <div className="flex gap-2 mt-2">
+          {/* <div className="flex gap-2 mt-2">
             <Chip
               value={
                 <div className="flex gap-1 items-center">
@@ -45,7 +45,7 @@ export default function InfoCard({ title, description, tags, link }) {
             />
 
             <Chip variant="outlined" value="More Info" />
-          </div>
+          </div> */}
         </CardBody>
       </Card>
     </div>
