@@ -3589,5 +3589,62 @@
     "link": "https://data.cdc.gov/Vaccinations/Weekly-Cumulative-Influenza-Vaccination-Coverage-C/vfj2-bfuw",
     "category": "health",
     "tags": ["api"]
+  },
+
+  {
+    "title": "Whole Genome Sequencing data",
+    "description": "Whole Genome Sequencing is a type of data for which one could create pretrained models to refine on space biology data from OSDR.",
+    "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-466",
+    "category": "agriculture",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Whole Genome Sequencing data",
+    "description": "Whole Genome Sequencing is a type of data for which one could create pretrained models to refine on space biology data from OSDR.",
+    "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-466",
+    "category": "agriculture",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Exoplanet Exploration: Planets Beyond Our Solar System",
+    "description": "This continuously updated exoplanetary encyclopedia combines interactive visualizations with detailed data on all known exoplanets. It offers grounded data that you can examine to learn about the different physical characteristics of exoplanets. You can also leverage this website to get inspired and create ideas to design your own planet, based on examples that are outside of our solar system as documented in NASA's official Exoplanet catalog.",
+    "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-466",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Exoplanet Exploration: Strange New Worlds",
+    "description": "This site contains examples of the exoplanets that NASA has surveyed and studied in space. Although these are NOT examples of habitable worlds, this information shows how diverse the universe can be, and that not all planets are similar to Earth. This information also sheds light on how perfect planet Earth is for sustaining life.",
+    "link": "https://exoplanets.nasa.gov/alien-worlds/strange-new-worlds/",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Exoplanet Exploration: What is an Exoplanet?",
+    "description": "This site can help you understand what an exoplanet is, the types of exoplanets that exist, and how unique they all are. Let this information inspire you as you design your own habitable exoplanet!",
+    "link": "https://exoplanets.nasa.gov/what-is-an-exoplanet/overview/",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "NIRISS exoplanet data",
+    "description": "The Near-Infrared Imager and Slitless Spectrograph (NIRISS) instrument is a Canadian contribution to the James Webb Space Telescope mission. In 2022, it captured the distinct signature of water, along with evidence of clouds and haze in the atmosphere of the exoplanet WASP-96 b. These are some of the features required for planet habitability.",
+    "link": "https://www.asc-csa.gc.ca/eng/news/articles/2022/20220712-canada-s-niriss-reveals-steamy-atmosphere-distant-planet-in-detail.asp",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "NIRISS exoplanet data",
+    "description": "The Near-Infrared Imager and Slitless Spectrograph (NIRISS) instrument is a Canadian contribution to the James Webb Space Telescope mission. In 2022, it captured the distinct signature of water, along with evidence of clouds and haze in the atmosphere of the exoplanet WASP-96 b. These are some of the features required for planet habitability.",
+    "link": "https://www.asc-csa.gc.ca/eng/news/articles/2022/20220712-canada-s-niriss-reveals-steamy-atmosphere-distant-planet-in-detail.asp",
+    "category": "exploration",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Exoplanet Zoo",
+    "description": "Various resources on exoplanets from the ESA website",
+    "link": "https://www.esa.int/esearch?q=Exoplanets",
+    "category": "exploration",
+    "tags": ["api", "json"]
   }
 ]
