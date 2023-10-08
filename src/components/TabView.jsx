@@ -50,6 +50,11 @@ export default function TabsCustomAnimation({
       desc: ``,
     },
     {
+      label: "Atmosphere and Biosphere",
+      value: "atmosphere",
+      desc: ``,
+    },
+    {
       label: "Solar Hub",
       value: "solar",
       desc: ``,
