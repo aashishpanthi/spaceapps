@@ -56,7 +56,7 @@ function CardDefault() {
         </CardHeader>
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            CO<sub>2</sub> Emission Analysis
+            CO<sub>2</sub> Emission Prediction
           </Typography>
           <Typography>
             Analyzsis of the CO<sub>2</sub> emission data of Nepal from 1960 to
