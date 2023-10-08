@@ -25,7 +25,7 @@ function CardDefault() {
           </Typography>
         </CardBody>
         <CardFooter className="pt-0 mt-0">
-          <Link to="/emission-analysis" className="inline-block">
+          <Link to="/emission-visualization" className="inline-block">
             <Button
               size="sm"
               variant="text"
