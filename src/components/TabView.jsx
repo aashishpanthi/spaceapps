@@ -4,12 +4,18 @@ import {
   TabsBody,
   Tab,
   TabPanel,
-  tabsHeader,
 } from "@material-tailwind/react";
 import { useRef } from "react";
+import { FaInfoCircle } from "react-icons/fa";
 
-export default function TabsCustomAnimation({ Category, setCategory }) {
+export default function TabsCustomAnimation({
+  Category,
+  setCategory,
+  open,
+  setOpen,
+}) {
   const tabsHeader = useRef(null);
+
   const data = [
     {
       label: "All ",
@@ -75,19 +81,28 @@ export default function TabsCustomAnimation({ Category, setCategory }) {
       desc: ``,
     },
   ];
-
-  window.onload = () => {
-    console.log(tabsHeader.current.children[0].click());
+  const handleInfoClick = () => {
+    setOpen(!open);
   };
-
+  window.onload = () => {
+    // console.log(first)
+    tabsHeader.current.children[0].click();
+  };
   return (
     <Tabs
       value="html"
       orientation="vertical"
       className="w-fit my-12  z-50 scale-110 flex flex-col "
     >
-      <h1 className="text-center font-semibold text-xl my-3">Categories:</h1>
-      <TabsHeader className="w-52 " ref={tabsHeader}>
+      <TabsHeader className="w-52">
+        {/* add a text about the filter */}
+        <div className="text-black text-sm font-semibold text-center py-3">
+          <span>Filter by Category</span>
+          <FaInfoCircle
+            className="inline-block ml-2 text-balck text-sm cursor-pointer"
+            onClick={handleInfoClick}
+          />
+        </div>
         {data.map(({ label, value }) => (
           <Tab
             className="my-1"
@@ -102,7 +117,7 @@ export default function TabsCustomAnimation({ Category, setCategory }) {
           </Tab>
         ))}
       </TabsHeader>
-      <TabsBody className="flex flex-col gap-0">
+      <TabsBody className="flex flex-col gap-0" ref={tabsHeader}>
         {data.map(({ value, desc }) => (
           <TabPanel key={value} value={"value"} className="py-0 ">
             {desc}{" "}
