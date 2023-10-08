@@ -38,13 +38,27 @@ function LineChart() {
     ],
   });
   return (
-    <main className="flex flex-col items-start w-screen h-96 justify-center">
+    <main className="flex flex-col items-center h-96 justify-center mt-24">
       {/* <div className="h-96 w-1 mx-auto"> */}
       <Line data={Data} />
       {/* </div> */}
       <h3 className="font-bold text-2xl mt-4">
         Carbon dioxide Emission : Predicted vs Actual
       </h3>
+
+      {/* explain the x-asis and y-axis data */}
+
+      <p className="text-center mt-2">
+        <strong>x-axis:</strong> Year <br />
+        <strong>y-axis:</strong> Carbon dioxide emission in kilotons
+      </p>
+
+      <p className="text-center mt-2 mb-24">
+        This line chart shows the actual and predicted carbon dioxide emission
+        of Nepal from 1960 to 2022. The actual data is taken from World Bank
+        Open Data and the predicted data is calculated using the Linear
+        Regression algorithm.
+      </p>
     </main>
   );
 }
