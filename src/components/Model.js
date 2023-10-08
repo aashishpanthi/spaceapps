@@ -4,12 +4,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import {
-  Dialog,
-  DialogHeader,
-  DialogBody,
-  Typography,
-} from "@material-tailwind/react";
+import { Dialog, DialogHeader, DialogBody } from "@material-tailwind/react";
 
 function LongDialog({ open, setOpen }) {
   const [AccordianOpen, setAccordianOpen] = useState(0);

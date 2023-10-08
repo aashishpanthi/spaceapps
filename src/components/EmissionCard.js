@@ -8,8 +8,6 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-import { FaSmog } from "react-icons/fa";
-
 function CardDefault() {
   return (
     <Card className="mt-6 w-72">
@@ -18,7 +16,6 @@ function CardDefault() {
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          {/* <FaSmog className="inline-block mr-2" /> */}
           CO<sub>2</sub> Emission Analysis
         </Typography>
         <Typography>
