@@ -6,20 +6,22 @@ import { getOneCountryData } from "../../data/Countries";
 
 const ChartByCountry = ({ country }) => {
   // useEffect(() => {
+
   let yearArr = [];
   let valuesArr = [];
-  let countryData = getOneCountryData(country);
-  let values = countryData.value;
+  useEffect(() => {
+    let countryData = getOneCountryData(country);
+    let values = countryData.value;
 
-  for (let year in values) {
-    yearArr.push(year);
-  }
-  for (let year in values) {
-    valuesArr.push(values[year]);
-  }
-  console.log(yearArr, valuesArr);
-  // });
-
+    for (let year in values) {
+      yearArr.push(year);
+    }
+    for (let year in values) {
+      valuesArr.push(values[year]);
+    }
+    console.log(yearArr, valuesArr);
+    // });
+  }, [country]);
   const [Data, setData] = useState({
     labels: yearArr,
     datasets: [
@@ -39,7 +41,7 @@ const ChartByCountry = ({ country }) => {
     ],
   });
   return (
-    <main className="flex w-screen flex-col items-center h-96 justify-center">
+    <main className="flex w-screen relative -left-64 flex-col items-center h-96 justify-center">
       {/* <div className="h-96  mx-auto"> */}
       <Line data={Data} />
       {/* skdjkf sdkfjl */}

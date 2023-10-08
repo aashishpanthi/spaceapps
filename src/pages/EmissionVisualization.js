@@ -18,6 +18,7 @@ function EmissionPage() {
         </span> */}
 
         <CountriesSelect country={country} setCountry={setCountry} />
+
         <ChartByCountry country={country} />
       </div>
     </div>
