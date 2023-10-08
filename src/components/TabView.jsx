@@ -9,8 +9,7 @@ import { useRef } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 
 export default function TabsCustomAnimation({
-  Category,
-  setCategory,
+  handleCategoryChange,
   open,
   setOpen,
 }) {
@@ -110,7 +109,7 @@ export default function TabsCustomAnimation({
             key={value}
             value={value}
             onClick={() => {
-              setCategory(value);
+              handleCategoryChange(value);
             }}
           >
             {label}

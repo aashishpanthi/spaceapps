@@ -2,28 +2,36 @@ import React, { useEffect, useState } from "react";
 import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
 import Model from "../components/Model";
+import Skeleton from "../components/Skeleton";
 
-function Home({ data }) {
-  const [Category, setCategory] = useState("all");
+function Home({ data, Category, handleCategoryChange }) {
   useEffect(() => {
     console.log(Category);
   }, [Category]);
+
+  console.log(data.length);
 
   const [open, setOpen] = useState(false);
   return (
     <div className="px-10 flex max-w-6xl mx-auto">
       <TabsCustomAnimation
         Category={Category}
-        setCategory={setCategory}
+        handleCategoryChange={handleCategoryChange}
         open={open}
         setOpen={setOpen}
       />
 
       <Model open={open} setOpen={setOpen} />
       <div className="flex-1 flex justify-center">
-        <div className="">
-          {data.map((item, index) => {
-            if (Category === item.category || Category === "all") {
+        <div className="mt-12">
+          {data.length === 0 ? (
+            <>
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+            </>
+          ) : (
+            data.map((item, index) => {
               return (
                 <InfoCard
                   key={index}
@@ -35,8 +43,8 @@ function Home({ data }) {
                     .toLowerCase()}`}
                 />
               );
-            }
-          })}
+            })
+          )}
         </div>
       </div>
     </div>
