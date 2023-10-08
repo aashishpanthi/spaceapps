@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaSmog } from "react-icons/fa";
 import SearchBox from "./SearchBox";
 import { Link } from "react-router-dom/dist";
 
@@ -18,6 +18,9 @@ function Navbar({ query, handleChange }) {
 
       {/* github icon */}
       <div className="flex items-center flex-shrink-0 text-white mr-6">
+        {/* <Link to="/emission-analysis">
+          <FaSmog className="text-black mx-5" style={{ fontSize: "2rem" }} />
+        </Link> */}
         <a
           href="https://github.com/aashishpanthi/spaceapps/"
           target="_blank"
