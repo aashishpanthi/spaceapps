@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import data from "../data/data.json";
+import { Chip } from "@material-tailwind/react";
 
 function Data({}) {
   const params = useParams();
@@ -17,10 +18,8 @@ function Data({}) {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 mt-5">
       <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
 
-      <div className="mt-4">
-        <span className="inline-block bg-black px-3 py-1 text-sm font-semibold text-white mr-2">
-          {category}
-        </span>
+      <div className="mt-4 ">
+        <Chip variant="ghost" value={category} className="w-fit" />
       </div>
 
       {/* description */}
