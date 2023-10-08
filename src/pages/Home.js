@@ -3,6 +3,7 @@ import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
 import Model from "../components/Model";
 import Skeleton from "../components/Skeleton";
+import { Typography } from "@material-tailwind/react";
 
 function Home({ data, Category, handleCategoryChange }) {
   useEffect(() => {
@@ -31,19 +32,25 @@ function Home({ data, Category, handleCategoryChange }) {
               <Skeleton />
             </>
           ) : (
-            data.map((item, index) => {
-              return (
-                <InfoCard
-                  key={index}
-                  title={item.title}
-                  description={item.description}
-                  tags={item.tags}
-                  link={`/data/${item.title
-                    .replace(/\s+/g, "-")
-                    .toLowerCase()}`}
-                />
-              );
-            })
+            <div>
+              <Typography color="gray">
+                Showing {data.length} results
+              </Typography>
+
+              {data.map((item, index) => {
+                return (
+                  <InfoCard
+                    key={index}
+                    title={item.title}
+                    description={item.description}
+                    tags={item.tags}
+                    link={`/data/${item.title
+                      .replace(/\s+/g, "-")
+                      .toLowerCase()}`}
+                  />
+                );
+              })}
+            </div>
           )}
         </div>
       </div>
