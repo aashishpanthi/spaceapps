@@ -3554,5 +3554,13 @@
     "link": "https://data.cdc.gov/Vaccinations/Weekly-Cumulative-Influenza-Vaccination-Coverage-C/vfj2-bfuw",
     "category": "health",
     "tags": ["api"]
+  },
+  {
+    "title": "Weekly Cumulative Influenza Vaccination Coverage, Children 6 months through 17 years, United States",
+    "description": "Data are weighted to represent total persons ages 18 and older living within households and to mitigate possible bias that can result from non-responses and incomplete survey frame. Responses in the Household Pulse Survey (https://www.census.gov/programs-surveys/household-pulse-survey.html) are self-reported. Estimates of vaccination coverage may differ from vaccine administration data reported at COVID-19 Vaccinations in the United States (https://covid.cdc.gov/covid-data-tracker/#vaccinations).",
+    "link": "https://data.cdc.gov/Vaccinations/Weekly-Cumulative-Influenza-Vaccination-Coverage-C/vfj2-bfuw",
+    "category": "health",
+    "tags": ["api"]
   }
+
 ]

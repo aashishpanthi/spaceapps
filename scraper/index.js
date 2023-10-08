@@ -12,20 +12,21 @@ const data = [];
 
 for (let i = 1; i <= 7; i++) {
   await page.goto(
-    "https://data.cdc.gov/browse?category=Vaccinations&page=" + i
+    "https://data.cdc.gov/browse?category=Vaccinations&page=" + i,
   );
 
   const links = await page.$$eval(".browse2-result-name a", (links) =>
-    links.map((link) => link.href)
+    links.map((link) => link.href),
   );
 
   const titles = await page.$$eval(".browse2-result-name", (titles) =>
-    titles.map((title) => title.textContent.trim())
+    titles.map((title) => title.textContent.trim()),
   );
 
   const descriptions = await page.$$eval(
     ".browse2-result-description.collapsible-content div",
-    (descriptions) => descriptions.map((description) => description.textContent)
+    (descriptions) =>
+      descriptions.map((description) => description.textContent),
   );
 
   for (let i = 0; i < links.length; i++) {
@@ -43,3 +44,57 @@ for (let i = 1; i <= 7; i++) {
 fs.writeFileSync("data8.json", JSON.stringify(data));
 
 await browser.close();
+
+// console scrapping
+
+const listContainer = document.querySelector(".collection-results-list__list");
+
+const data = [];
+let count = 0;
+while (data.length != 202) {
+  count++;
+  if (count % 100 != 0) continue;
+  if (count == 100000) break;
+  let tempData = [];
+  listContainer.children.forEach((child) => {
+    const title = child.querySelector(
+      ".collection-results-item__title",
+    ).innerHTML;
+    const description = child.querySelector(
+      ".collection-results-item__desc",
+    ).innerHTML;
+    const link =
+      "https://search.earthdata.nasa.gov/search/granules?" +
+      "p=" +
+      child
+        .querySelector(".collection-results-item__link")
+        .getAttribute("data-testid")
+        .replace("collection-result-item_", "");
+
+    const newData = {
+      title,
+      description,
+      link,
+      category: "Agriculture",
+      tags: ["api"],
+    };
+    tempData.push(newData);
+  });
+
+  console.log(tempData);
+  const lastTitle = data.length != 0 ? data[data.length - 1].title : null;
+  if (lastTitle == null) {
+    data.push(...tempData);
+    listContainer.lastChild.scrollIntoView();
+    continue;
+  }
+  let shouldPush = false;
+
+  tempData.forEach((tdata) => {
+    if (shouldPush) data.push(tdata);
+
+    if (tdata.title == lastTitle) shouldPush = true;
+  });
+  tempData = [];
+  listContainer.lastChild.scrollIntoView();
+}

@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TabsCustomAnimation from "../components/TabView";
 import InfoCard from "../components/Card";
 import Model from "../components/Model";
 import Skeleton from "../components/Skeleton";
 
 function Home({ data, Category, handleCategoryChange }) {
-  useEffect(() => {
-    console.log(Category);
-  }, [Category]);
-
-  console.log(data.length);
-
   const [open, setOpen] = useState(false);
   return (
     <div className="px-10 flex max-w-6xl mx-auto">

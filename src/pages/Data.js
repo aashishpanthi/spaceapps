@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import data from "../data/data.json";
 import { Chip } from "@material-tailwind/react";
 
-function Data({}) {
+function Data() {
   const params = useParams();
   const id = params.id;
 
