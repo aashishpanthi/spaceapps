@@ -19,7 +19,7 @@ function LineChart() {
           "#f3ba2f",
           "#2a71d0",
         ],
-        borderColor: "rgba(0,0,0,.)",
+        borderColor: "green",
         borderWidth: 2,
       },
       {
@@ -32,14 +32,14 @@ function LineChart() {
           "#f3ba2f",
           "#2a71d0",
         ],
-        borderColor: "blue",
+        borderColor: "red",
         borderWidth: 2,
       },
     ],
   });
   return (
-    <main className="flex w-full justify-center">
-      <div className="h-96 mx-auto">
+    <main className="flex w-screen justify-center">
+      <div className="h-96  mx-auto">
         <Line data={Data} />
       </div>
     </main>
