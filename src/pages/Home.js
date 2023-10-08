@@ -44,9 +44,7 @@ function Home({ data, Category, handleCategoryChange }) {
                     title={item.title}
                     description={item.description}
                     tags={item.tags}
-                    link={`/data/${item.title
-                      .replace(/\s+/g, "-")
-                      .toLowerCase()}`}
+                    link={`/data/${item.title.toLowerCase()}`}
                   />
                 );
               })}
