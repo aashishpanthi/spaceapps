@@ -41,7 +41,7 @@ const ChartByCountry = ({ country }) => {
     ],
   });
   return (
-    <main className="flex w-screen relative -left-64 flex-col items-center h-96 justify-center">
+    <main className="flex relative max-w-4xl mx-auto flex-col items-center min-h-96 justify-center mt-12">
       {/* <div className="h-96  mx-auto"> */}
       <Line data={Data} />
       {/* skdjkf sdkfjl */}
@@ -49,6 +49,18 @@ const ChartByCountry = ({ country }) => {
       <h3 className="font-bold text-2xl mt-4">
         Carbon dioxide Emission : For {country}
       </h3>
+
+      <p className="text-center mt-2">
+        <strong>x-axis:</strong> Year <br />
+        <strong>y-axis:</strong> Carbon dioxide emission in kilotons
+      </p>
+
+      <p className="text-center mt-2 mb-4">
+        This line chart shows the actual and predicted carbon dioxide emission
+        of Nepal from 1960 to 2022. The actual data is taken from World Bank
+        Open Data and the predicted data is calculated using the time series
+        analysis.
+      </p>
     </main>
   );
 };
