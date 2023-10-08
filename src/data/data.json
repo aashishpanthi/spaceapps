@@ -25,6 +25,6 @@
     "description": "Contains datasets for analyzing observed seasonal and annual climate change trends in Nepal at district and physiographic regions. District wise maximum and minimum temperature trends, precipitation trends, climatic normal and extreme climate indices are included. Spatial extent: District-wise, physiographic regions. Temporal extent: 1971-2014 This data is based on Observed Climate Trend Analysis of Nepal; a joint report by the Department of Hydrology and Meteorology and Ministry of Population and Environment.",
     "tags": ["PDF", "JSON"],
     "link": "http://www.google.com",
-    "category": "climate"
+    "category": "agriculture"
   }
 ]
