@@ -6,34 +6,34 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
-export default function TabsCustomAnimation() {
+export default function TabsCustomAnimation({ Category, setCategory }) {
   const data = [
     {
-      label: "HTML",
-      value: "html",
+      label: "All ",
+      value: "all",
       desc: ``,
     },
     {
       label: "Climate ",
-      value: "react",
+      value: "climate",
       desc: "",
     },
 
     {
-      label: "CO2",
-      value: "vue",
+      label: "Agriculture",
+      value: "agriculture",
       desc: "",
     },
 
     {
-      label: "Angular",
-      value: "angular",
+      label: "Health",
+      value: "health",
       desc: ``,
     },
 
     {
-      label: "Svelte",
-      value: "svelte",
+      label: "Space Exploration",
+      value: "exploration",
       desc: ``,
     },
   ];
@@ -46,16 +46,20 @@ export default function TabsCustomAnimation() {
     >
       <TabsHeader className="w-52">
         {data.map(({ label, value }) => (
-          <Tab key={value} value={value}>
+          <Tab
+            key={value}
+            value={value}
+            onClick={() => {
+              setCategory(value);
+            }}
+          >
             {label}
           </Tab>
         ))}
       </TabsHeader>
       <TabsBody className="flex flex-col gap-0">
         {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value} className="py-0 ">
-            {desc}
-          </TabPanel>
+          <TabPanel key={value} value={"value"} className="py-0 "></TabPanel>
         ))}
       </TabsBody>
     </Tabs>
