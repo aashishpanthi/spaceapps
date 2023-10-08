@@ -4,11 +4,13 @@ import { Chart as ChartJS } from "chart.js/auto";
 import { useState } from "react";
 import { getOneCountryData } from "../../data/Countries";
 
-const ChartByCountry = ({ country }) => {
+const ChartByCountry = ({ country = "India" }) => {
   // useEffect(() => {
 
   let yearArr = [];
   let valuesArr = [];
+  const [yArray, setYArray] = useState(yearArr);
+  const [vArray, setVArray] = useState(valuesArr);
   useEffect(() => {
     let countryData = getOneCountryData(country);
     let values = countryData.value;
@@ -16,9 +18,11 @@ const ChartByCountry = ({ country }) => {
     for (let year in values) {
       yearArr.push(year);
     }
+    setYArray(yearArr);
     for (let year in values) {
       valuesArr.push(values[year]);
     }
+    setVArray(valuesArr);
     console.log(yearArr, valuesArr);
     // });
   }, [country]);
