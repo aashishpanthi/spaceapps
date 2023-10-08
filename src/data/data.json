@@ -10493,5 +10493,34 @@
     "link": "https://search.earthdata.nasa.gov/search/granules?p=C2311997595-GES_DISC",
     "category": "hydrosphere",
     "tags": ["api"]
+  },
+  {
+    "title": "NASA Oceanography:",
+    "description": "This site contains information about NASA’s work studying oceans, and gives preliminary information about water cycles, carbon cycles, ecosystems, climate change, and many other useful topics.",
+    "link": "https://science.nasa.gov/earth-science/focus-areas/climate-variability-and-change/ocean-physics/oceanography/",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Ocean Biology and Biogeochemistry (OBB) Funded Projects:",
+    "description": "This site is a comprehensive list of previously funded NASA OBB projects, and these projects research and contain many of the same or similar elements which may be included in the app.",
+    "link": "https://cce.nasa.gov/ocean_biology_biogeochemistry/funded_projects.html",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Fisheries and Oceans Canada (DFO) - National Eelgrass Dataset For Canada (NETForce)",
+    "description": "This collection of eelgrass data has been collated to produce a national map of the location and distribution of eelgrass beds across Canada. Eelgrass is a type of seagrass that can form underwater meadows, helping trap carbon, improve water quality, and provide an ecosystem for a variety of marine animals.",
+    "link": "https://open.canada.ca/data/dataset/a733fb88-ddaf-47f8-95bb-e107630e8e62",
+    "category": "ocean",
+    "tags": ["api"]
+  },
+  {
+    "title": "Protecting Canada’s oceans",
+    "description": "On this page, Canada's Department of Fisheries and Oceans outlines the importance of oceans as well as what the Government of Canada is doing to protect them.",
+    "link": "https://www.dfo-mpo.gc.ca/oceans/conservation/plan/MCT-OCM-eng.html",
+    "category": "ocean",
+    "tags": ["api"]
   }
+  
 ]
