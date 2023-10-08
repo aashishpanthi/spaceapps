@@ -3554,5 +3554,20 @@
     "link": "https://data.cdc.gov/Vaccinations/Weekly-Cumulative-Influenza-Vaccination-Coverage-C/vfj2-bfuw",
     "category": "health",
     "tags": ["api"]
+  },
+
+  {
+    "title": "Whole Genome Sequencing data",
+    "description": "Whole Genome Sequencing is a type of data for which one could create pretrained models to refine on space biology data from OSDR.",
+    "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-466",
+    "category": "agriculture",
+    "tags": ["api", "json"]
+  },
+  {
+    "title": "Whole Genome Sequencing data",
+    "description": "Whole Genome Sequencing is a type of data for which one could create pretrained models to refine on space biology data from OSDR.",
+    "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-466",
+    "category": "agriculture",
+    "tags": ["api", "json"]
   }
 ]
