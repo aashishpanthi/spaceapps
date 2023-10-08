@@ -13,7 +13,7 @@ export default function InfoCard({ title, description, tags, link }) {
             </Typography>
           </Link>
           <Link to={link} className="text-black inline-block my-0">
-            <Typography color="gray" className="mb-8 font-normal line-clamp-3">
+            <Typography color="gray" className="mb-4 font-normal line-clamp-3">
               {description.length > 250
                 ? description.slice(0, 250) + "..."
                 : description}

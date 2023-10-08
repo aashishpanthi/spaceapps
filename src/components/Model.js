@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  Button,
   Dialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
   Typography,
 } from "@material-tailwind/react";
 
