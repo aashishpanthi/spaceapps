@@ -1,5 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
+import CountriesSelect from "../components/CountriesSelect";
 
 function EmissionPage() {
   return (
@@ -10,9 +11,11 @@ function EmissionPage() {
       </h1>
 
       <div className="mt-4 ">
-        <span className="inline-block bg-black px-3 py-1 text-sm font-semibold text-white mr-2">
-          Hi
-        </span>
+        {/* <span className="inline-block bg-black px-3 py-1 text-sm font-semibold text-white mr-2">
+          USA
+        </span> */}
+
+        <CountriesSelect />
       </div>
     </div>
   );
