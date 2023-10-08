@@ -10593,6 +10593,20 @@
     "link": "https://spaceplace.nasa.gov/menu/do/",
     "category": "exploration",
     "tags": ["api"]
+  },
+  {
+    "title": "RADARSAT Constellation Mission",
+    "description":"RADARSAT Constellation Mission (RCM) is a constellation of three Canadian satellites that use a technology called synthetic aperture radar (SAR) to capture images of the Earth's surface. It has been active since 2019. SAR can be used to measure a lot of things that a geologist might be interested in, including the shape of the Earth's surface (morphopology), movement due to earthquakes or volcanic eruptions, and well as surface roughness. As these satellites are still active, this dataset is continually being updated with new images. The data is available through the Earth Observation Data Management System (EODMS), linked here: https://www.eodms-sgdot.nrcan-rncan.gc.ca/index-en.html.",
+    "link": "https://donnees-data.asc-csa.gc.ca/dataset/64927856-8o0t-5u1o-987izna480aa45",
+    "category": "exploration",
+    "tags": ["api"]
+  },
+  {
+    "title": "RADARSAT -1 Archive",
+    "description":"RADARSAT-1 was a Canadian satellite, active from 1995 to 2013, that captured images of the Earth's surface using a technology called synthetic aperture radar (SAR). SAR can be used to measure a lot of things that a geologist might be interested in, including the shape of the Earth's surface (morphopology), movement due to earthquakes or volcanic eruptions, and well as surface roughness. Archived RADARSAT-1 data is available on the Earth Observation Data Management System as well as via an AWS S3 bucket. This is another rich source of SAR data.",
+    "link": "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1",
+    "category": "exploration",
+    "tags": ["api"]
   }
   
   
