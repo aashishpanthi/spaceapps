@@ -56,10 +56,9 @@ const ChartByCountry = ({ country }) => {
       </p>
 
       <p className="text-center mt-2 mb-4">
-        This line chart shows the actual and predicted carbon dioxide emission
-        of Nepal from 1960 to 2022. The actual data is taken from World Bank
-        Open Data and the predicted data is calculated using the time series
-        analysis.
+        This line chart shows the carbon dioxide emission of {country} from 1960
+        to 2022. The actual data is taken from World Bank Open Data and the
+        predicted data is calculated using the time series analysis.
       </p>
     </main>
   );
