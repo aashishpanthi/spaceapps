@@ -92,14 +92,14 @@ export default function TabsCustomAnimation({
     <Tabs
       value="html"
       orientation="vertical"
-      className="w-fit my-12  z-50 scale-110 flex flex-col "
+      className="w-fit my-12 z-50 flex flex-col "
     >
       <TabsHeader className="w-52">
         {/* add a text about the filter */}
-        <div className="text-black text-sm font-semibold text-center py-3">
+        <div className="text-black text-md font-semibold text-center py-3">
           <span>Filter by Category</span>
           <FaInfoCircle
-            className="inline-block ml-2 text-balck text-sm cursor-pointer"
+            className="inline-block ml-2 text-balck text-md cursor-pointer"
             onClick={handleInfoClick}
           />
         </div>

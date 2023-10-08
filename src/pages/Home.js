@@ -11,7 +11,7 @@ function Home({ data }) {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className="px-10 flex ">
+    <div className="px-10 flex max-w-6xl mx-auto">
       <TabsCustomAnimation
         Category={Category}
         setCategory={setCategory}
@@ -21,7 +21,7 @@ function Home({ data }) {
 
       <Model open={open} setOpen={setOpen} />
       <div className="flex-1 flex justify-center">
-        <div className="w-[900px]">
+        <div className="">
           {data.map((item, index) => {
             if (Category === item.category || Category === "all") {
               return (
