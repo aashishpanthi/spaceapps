@@ -46,7 +46,7 @@ export default function TabsCustomAnimation({
     },
     {
       label: "Ocean and Marine",
-      value: "marine",
+      value: "ocean",
       desc: ``,
     },
     {
