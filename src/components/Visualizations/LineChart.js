@@ -38,10 +38,13 @@ function LineChart() {
     ],
   });
   return (
-    <main className="flex w-screen justify-center">
-      <div className="h-96  mx-auto">
-        <Line data={Data} />
-      </div>
+    <main className="flex flex-col items-center w-screen h-96 justify-center">
+      {/* <div className="h-96 w-1 mx-auto"> */}
+      <Line data={Data} />
+      {/* </div> */}
+      <h3 className="font-bold text-2xl mt-4">
+        Carbon dioxide Emission : Predicted vs Actual
+      </h3>
     </main>
   );
 }
