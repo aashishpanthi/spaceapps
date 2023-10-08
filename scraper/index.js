@@ -47,14 +47,10 @@ await browser.close();
 
 // console scrapping
 
-const listContainer = document.querySelector(".collection-results-list__list");
+var listContainer = document.querySelector(".collection-results-list__list");
 
-const data = [];
-let count = 0;
-while (data.length != 202) {
-  count++;
-  if (count % 100 != 0) continue;
-  if (count == 100000) break;
+var data = [];
+function scrapData() {
   let tempData = [];
   listContainer.children.forEach((child) => {
     const title = child.querySelector(
@@ -86,7 +82,6 @@ while (data.length != 202) {
   if (lastTitle == null) {
     data.push(...tempData);
     listContainer.lastChild.scrollIntoView();
-    continue;
   }
   let shouldPush = false;
 
@@ -98,3 +93,9 @@ while (data.length != 202) {
   tempData = [];
   listContainer.lastChild.scrollIntoView();
 }
+
+var interval = setInterval(() => {
+  scrapData();
+
+  if (data.length == 391) clearInterval(interval);
+}, 2000);

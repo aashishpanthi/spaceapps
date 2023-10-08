@@ -6,7 +6,12 @@ import { useState } from "react";
 import data from "./data/data.json";
 import Data from "./pages/Data";
 import EmissionPage from "./pages/EmissionPage";
+<<<<<<< HEAD
 import LineChart from "./components/Visualizations/LineChart";
+=======
+import EmissionVisualization from "./pages/EmissionVisualization";
+import NotFound from "./pages/NotFound";
+>>>>>>> 19da7ef31cb87da9a24007984e983a0534c4af0a
 
 function App() {
   const [query, setQuery] = useState("");
@@ -67,7 +72,15 @@ function App() {
           />
           <Route path="/data/:id" element={<Data />} />
           <Route path="/emission-analysis" element={<EmissionPage />} />
+<<<<<<< HEAD
           <Route path="/visualize" element={<LineChart />} />
+=======
+          <Route
+            path="emission-visualization"
+            element={<EmissionVisualization />}
+          />
+          <Route path="*" element={<NotFound />} />
+>>>>>>> 19da7ef31cb87da9a24007984e983a0534c4af0a
         </Routes>
       </div>
 
