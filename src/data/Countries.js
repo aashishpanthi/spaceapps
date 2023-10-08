@@ -1,6 +1,7 @@
 export const countryData = [
   {
     Country_Name: "Africa Eastern and Southern",
+
     1990: 304614.720181,
     1991: 300135.943094,
     1992: 296834.691723,
@@ -8439,3 +8440,7 @@ export const countryData = [
     2020: 8312.5,
   },
 ];
+export function findCountry(name) {
+  let data = countryData.find((d) => d.Country_Name === name);
+  return data;
+}
