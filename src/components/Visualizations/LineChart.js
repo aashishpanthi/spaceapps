@@ -11,7 +11,7 @@ function LineChart() {
     datasets: [
       {
         label: "Actual Emission",
-        data: PredictedData.map((data) => data.value),
+        data: NepalData.map((data) => data.value),
         backgroundColor: [
           "rgba(75,192,192,1)",
           "#ecf0f1",
@@ -19,7 +19,7 @@ function LineChart() {
           "#f3ba2f",
           "#2a71d0",
         ],
-        borderColor: "red",
+        borderColor: "rgba(0,0,0,.)",
         borderWidth: 2,
       },
       {
@@ -32,15 +32,17 @@ function LineChart() {
           "#f3ba2f",
           "#2a71d0",
         ],
-        borderColor: "green",
+        borderColor: "blue",
         borderWidth: 2,
       },
     ],
   });
   return (
-    <div className="w-3/4 h-96 m-auto">
-      <Line data={Data} />
-    </div>
+    <main className="flex w-full justify-center">
+      <div className="h-96 mx-auto">
+        <Line data={Data} />
+      </div>
+    </main>
   );
 }
 
