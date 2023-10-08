@@ -9,7 +9,7 @@ function Navbar({ query, handleChange }) {
       {/* logo tailwind styling */}
       <Link to="/">
         <div className="flex items-center flex-shrink-0 text-black mr-6 font-bold text-xl tracking-tight">
-          Data WareHouse
+          Data Nexus
         </div>
       </Link>
 
