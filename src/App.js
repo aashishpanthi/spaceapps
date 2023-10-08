@@ -10,6 +10,19 @@ function App() {
   const [query, setQuery] = useState("");
   const [filteredData, setFilteredData] = useState(data);
 
+  const [Category, setCategory] = useState("all");
+
+  const handleCategoryChange = (value) => {
+    setCategory(value);
+
+    if (value === "all") return setFilteredData(data);
+    const newFilteredData = data.filter((item) => {
+      return item.category === value;
+    });
+
+    setFilteredData(newFilteredData);
+  };
+
   const handleChange = (value) => {
     setQuery(value);
 
@@ -40,7 +53,16 @@ function App() {
 
       <div className="min-h-[calc(100vh-4rem)] bg-gray-50 pt-2 pb-3">
         <Routes>
-          <Route path="/" element={<Home data={filteredData} />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                data={filteredData}
+                Category={Category}
+                handleCategoryChange={handleCategoryChange}
+              />
+            }
+          />
           <Route path="/data/:id" element={<Data />} />
         </Routes>
       </div>

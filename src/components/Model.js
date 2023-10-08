@@ -5,11 +5,9 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import {
-  Button,
   Dialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
   Typography,
 } from "@material-tailwind/react";
 
