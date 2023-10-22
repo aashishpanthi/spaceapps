@@ -3,11 +3,11 @@ import { Line } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 import { useState } from "react";
 import { NepalData } from "../../data/NepalData";
-import { PredictedData } from "../../data/PredictedData";
+import { prediction } from "../../data/PredictedData";
 
 function LineChart() {
   const [Data, setData] = useState({
-    labels: NepalData.map((data) => data.year),
+    labels: prediction.map((data) => data.year),
     datasets: [
       {
         label: "Actual Emission",
@@ -19,12 +19,12 @@ function LineChart() {
           "#f3ba2f",
           "#2a71d0",
         ],
-        borderColor: "green",
+        borderColor: "blue",
         borderWidth: 2,
       },
       {
         label: "Predicted Emission",
-        data: PredictedData.map((data) => data.value),
+        data: prediction.map((data) => data.value),
         backgroundColor: [
           "rgba(75,192,192,1)",
           "#ecf0f1",
@@ -54,10 +54,10 @@ function LineChart() {
       </p>
 
       <p className="text-center mt-2 mb-24">
-        This line chart shows the actual and predicted carbon dioxide emission
-        of Nepal from 1960 to 2022. The actual data is taken from World Bank
-        Open Data and the predicted data is calculated using the time series
-        analysis.
+        This line chart shows Nepal's actual and predicted carbon dioxide
+        emissions between 1960 AD and 2025 AD. The actual data is taken from the
+        World Bank Open Data and the predicted data are calculated using the
+        time series analysis.
       </p>
     </main>
   );
