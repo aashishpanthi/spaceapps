@@ -74,7 +74,19 @@ function CountriesSelect({ country, setCountry }) {
         }}
       >
         {countries.map((country) => (
-          <option key={country.Country_Name} value={country.Country_Name}>
+          <option
+            key={country.Country_Name}
+            value={
+              JSON.parse(localStorage.getItem("country"))?.name ||
+              country.Country_Name
+            }
+            onClick={() => {
+              localStorage.setItem(
+                "country",
+                JSON.stringify({ name: country.Country_Name })
+              );
+            }}
+          >
             {country.Country_Name}
           </option>
         ))}
